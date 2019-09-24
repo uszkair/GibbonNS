@@ -1,0 +1,10 @@
+{
+  "MAINMENU": {
+    "TITLE": "Főmenű",
+    "SEARCH": "Keresés",
+    "SIGN": "Jelzések",
+    "MESSAGES": "Üzenetek",
+    "USER_PROFILE": "Profil",
+    "SETTINGS": "Beállítások"
+  }
+}

@@ -1,7 +1,9 @@
-import { Component, OnInit } from "@angular/core";
-import { BackendService } from "../services/backend.service";
-import { RouterExtensions } from "nativescript-angular/router";
-import { UtilityService } from "../services/utility.service";
+import {ViewChild} from "@angular/core";
+import {RadSideDrawerComponent, SideDrawerType} from "nativescript-ui-sidedrawer/angular";
+import {Component, OnInit} from "@angular/core";
+import {BackendService} from "../services/backend.service";
+import {RouterExtensions} from "nativescript-angular/router";
+import {UtilityService} from "../services/utility.service";
 
 @Component({
     selector: "ns-home",
@@ -15,7 +17,8 @@ export class HomeComponent implements OnInit {
     // This pattern makes use of Angular’s dependency injection implementation to inject an instance of the ItemService service into this class.
     // Angular knows about this service because it is included in your app’s main NgModule, defined in app.module.ts.
     constructor(private backendService: BackendService, private routerExtension: RouterExtensions,
-        private utilityService: UtilityService) { }
+                private utilityService: UtilityService) {
+    }
 
     ngOnInit(): void {
     }
@@ -31,5 +34,15 @@ export class HomeComponent implements OnInit {
 
     isTablet() {
         return this.utilityService.isTablet();
+    }
+
+    mainContentText: string = "Hello Világ";
+
+    onOpenDrawerTap() {
+        console.log("onOpenDrawerTap")
+    }
+
+    onCloseDrawerTap() {
+        console.log("onCloseDrawerTap")
     }
 }

@@ -24,10 +24,18 @@ export class BluetoothListComponent implements OnInit {
 
 
     searchDevice() {
-            this.foundedDevices = this.blService.FoundedDevices;
+        if (this.blService.IsEnabled) {
+
+        }
+        this.foundedDevices = [{
+            address: '1002', name: 'Robi'
+        },
+        {
+            address: '1003', name: 'Sanyi'
+        }]//;this.blService.FoundedDevices;
     }
 
     onItemTap(args: ItemEventData): void {
-      console.log('Item with index: ' + args.index + ' tapped');
+        console.log('Item with index: ' + args.index + ' tapped');
     }
 }

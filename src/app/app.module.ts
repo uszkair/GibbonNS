@@ -2,8 +2,6 @@ import { NgModule, NO_ERRORS_SCHEMA } from "@angular/core";
 import { NativeScriptModule } from "nativescript-angular/nativescript.module";
 import { NativeScriptFormsModule } from "nativescript-angular/forms";
 
-// Uncomment and add to NgModule imports if you need to use the HttpClient wrapper
-// import { NativeScriptHttpClientModule } from "nativescript-angular/http-client";
 
 import { AppRoutingModule } from "./app-routing.module";
 
@@ -18,15 +16,37 @@ import { AuthGuard } from "./auth-guard.service";
 import {BluetoothService} from "~/app/services/bluetooth.service";
 import {BluetoothComponent} from "~/app/bluetooth/bluetooth.component";
 import {BluetoothListComponent} from "~/app/bluetooth-list/bluetooth-list.component";
+import {NativeScriptUISideDrawerModule} from "nativescript-ui-sidedrawer/angular";
+import {NativeScriptHttpModule} from "nativescript-angular";
+import {
+    TranslateLoader,
+    TranslateModule,
+} from "@ngx-translate/core";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+
+export function createTranslateLoader(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 
 @NgModule({
     bootstrap: [
         AppComponent
     ],
     imports: [
+        NativeScriptHttpModule,
+        NativeScriptUISideDrawerModule,
         NativeScriptModule,
         NativeScriptFormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        HttpClientModule,
+        TranslateModule.forRoot({
+            loader: {
+                provide: TranslateLoader,
+                useFactory: (createTranslateLoader),
+                deps: [HttpClient]
+            }
+        })
     ],
     declarations: [
         AppComponent,
@@ -37,7 +57,8 @@ import {BluetoothListComponent} from "~/app/bluetooth-list/bluetooth-list.compon
     ],
     exports: [
         BluetoothComponent,
-        BluetoothListComponent
+        BluetoothListComponent,
+        TranslateModule
     ],
     providers: [
         BackendService,
