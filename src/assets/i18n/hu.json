@@ -1,4 +1,5 @@
 {
-  "hello": "szia",
-  "goodbye": "viszlát"
+  "MAINMENU": {
+    "TITLE": "Főmenü"
+  }
 }
