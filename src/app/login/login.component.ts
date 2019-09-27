@@ -75,7 +75,7 @@ export class LoginComponent implements OnInit {
     if (!hasErrorMsg)
       return false;
 
-    const isValidEmail = this.user.hasEmail() && this.utilityService.isValidEmail(this.user.email);
+    const isValidEmail = true; //this.user.hasEmail() && this.utilityService.isValidEmail(this.user.email);
     let hasError = hasErrorMsg || !isValidEmail;
 
     if (isValidEmail) {

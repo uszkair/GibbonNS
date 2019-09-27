@@ -1,10 +1,4 @@
 {
-  "MAINMENU": {
-    "TITLE": "Main Menu",
-    "SEARCH": "Search",
-    "SIGN": "Sign",
-    "MESSAGES": "Messages",
-    "USER_PROFILE": "Profile",
-    "SETTINGS": "Settings"
-  }
+  "hello": "szia",
+  "goodbye": "viszlát"
 }

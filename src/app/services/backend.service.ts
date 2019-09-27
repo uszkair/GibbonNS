@@ -19,7 +19,7 @@ export class BackendService {
     let that = this;
     return new Promise(function (resolve, reject) {
       setTimeout(() => {
-        if (user.email === user.password) {
+        if (user.email === user.password || true) { // mindig beenged!!
           that.user = JSON.stringify(user)
           resolve();
         } else {
