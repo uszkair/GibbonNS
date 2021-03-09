@@ -132,6 +132,20 @@
     tree-kill "1.2.0"
     webpack-sources "1.2.0"
 
+"@ngx-translate/core@^11.0.1":
+  version "11.0.1"
+  resolved "https://registry.yarnpkg.com/@ngx-translate/core/-/core-11.0.1.tgz#cecefad41f06368f5859dac48fec8fcc4485615f"
+  integrity sha512-nBCa1ZD9fAUY/3eskP3Lql2fNg8OMrYIej1/5GRsfcutx9tG/5fZLCv9m6UCw1aS+u4uK/vXjv1ctG/FdMvaWg==
+  dependencies:
+    tslib "^1.9.0"
+
+"@ngx-translate/http-loader@^4.0.0":
+  version "4.0.0"
+  resolved "https://registry.yarnpkg.com/@ngx-translate/http-loader/-/http-loader-4.0.0.tgz#8a555248ad4b7d513460fcec9da25b0447962f1d"
+  integrity sha512-x8LumqydWD7eX9yQTAVeoCM9gFUIGVTUjZqbxdAUavAA3qVnk9wCQux7iHLPXpydl8vyQmLoPQR+fFU+DUDOMA==
+  dependencies:
+    tslib "^1.9.0"
+
 "@schematics/angular@~7.0.0":
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@schematics/angular/-/angular-7.0.7.tgz#2aabf02779b1e5c6035135a652b5402f5785eae6"
@@ -646,10 +660,10 @@ bluebird@^3.4.6, bluebird@^3.5.1, bluebird@^3.5.5:
   resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.5.tgz#a8d0afd73251effbbd5fe384a77d73003c17a71f"
   integrity sha512-5am6HnnfN+urzt4yfg7IgTbotDjIT/u8AJpEt0sIU9FtXfVeezXAPKswrG+xKUCOYAINpSdgZVDU6QFh+cuH3w==
 
-bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.4.0:
-  version "4.11.8"
-  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.11.8.tgz#2cde09eb5ee341f484746bb0309b3253b1b1442f"
-  integrity sha512-ItfYfPLkWHUjckQCk8xC+LwxgK8NYcXywGigJgSwOP8Y2iyWT4f2vsZnoOXTTbo+o5yXmIUJ4gn5538SO5S3gA==
+bn.js@^4.0.0, bn.js@^4.1.0, bn.js@^4.1.1, bn.js@^4.11.9:
+  version "4.12.0"
+  resolved "https://registry.yarnpkg.com/bn.js/-/bn.js-4.12.0.tgz#775b3f278efbb9718eec7361f483fb36fbbfea88"
+  integrity sha512-c98Bf3tPniI+scsdk237ku1Dc3ujXQTSgyiPUDEOe7tRkhrqridvh8klBv0HCEso1OLOYcHuCv/cS6DNxKH+ZA==
 
 body-parser@1.19.0:
   version "1.19.0"
@@ -700,7 +714,7 @@ braces@^2.3.0, braces@^2.3.1, braces@^2.3.2:
     split-string "^3.0.2"
     to-regex "^3.0.1"
 
-brorand@^1.0.1:
+brorand@^1.0.1, brorand@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/brorand/-/brorand-1.1.0.tgz#12c25efe40a45e3c323eb8675a0a0ce57b22371f"
   integrity sha1-EsJe/kCkXjwyPrhnWgoM5XsiNx8=
@@ -1522,17 +1536,17 @@ ejs@^2.6.1:
   integrity sha512-kS/gEPzZs3Y1rRsbGX4UOSjtP/CeJP0CxSNZHYxGfVM/VgLcv0ZqM7C45YyTj2DI2g7+P9Dd24C+IMIg6D0nYQ==
 
 elliptic@^6.0.0:
-  version "6.5.0"
-  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.0.tgz#2b8ed4c891b7de3200e14412a5b8248c7af505ca"
-  integrity sha512-eFOJTMyCYb7xtE/caJ6JJu+bhi67WCYNbkGSknu20pmM8Ke/bqOfdnZWxyoGN26JgfxTbXrsCkEw4KheCT/KGg==
+  version "6.5.4"
+  resolved "https://registry.yarnpkg.com/elliptic/-/elliptic-6.5.4.tgz#da37cebd31e79a1367e941b592ed1fbebd58abbb"
+  integrity sha512-iLhC6ULemrljPZb+QutR5TQGB+pdW6KGD5RSegS+8sorOZT+rdQFbsQFJgvN3eRqNALqJer4oQ16YvJHlU8hzQ==
   dependencies:
-    bn.js "^4.4.0"
-    brorand "^1.0.1"
+    bn.js "^4.11.9"
+    brorand "^1.1.0"
     hash.js "^1.0.0"
-    hmac-drbg "^1.0.0"
-    inherits "^2.0.1"
-    minimalistic-assert "^1.0.0"
-    minimalistic-crypto-utils "^1.0.0"
+    hmac-drbg "^1.0.1"
+    inherits "^2.0.4"
+    minimalistic-assert "^1.0.1"
+    minimalistic-crypto-utils "^1.0.1"
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -2245,7 +2259,7 @@ hash.js@^1.0.0, hash.js@^1.0.3:
     inherits "^2.0.3"
     minimalistic-assert "^1.0.1"
 
-hmac-drbg@^1.0.0:
+hmac-drbg@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/hmac-drbg/-/hmac-drbg-1.0.1.tgz#d2745701025a6c775a6c545793ed502fc0c649a1"
   integrity sha1-0nRXAQJabHdabFRXk+1QL8DGSaE=
@@ -2379,7 +2393,7 @@ inflight@^1.0.4:
     once "^1.3.0"
     wrappy "1"
 
-inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
+inherits@2, inherits@2.0.4, inherits@^2.0.1, inherits@^2.0.3, inherits@^2.0.4, inherits@~2.0.0, inherits@~2.0.1, inherits@~2.0.3:
   version "2.0.4"
   resolved "https://registry.yarnpkg.com/inherits/-/inherits-2.0.4.tgz#0fa2c64f932917c3433a0ded55363aae37416b7c"
   integrity sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==
@@ -3041,7 +3055,7 @@ minimalistic-assert@^1.0.0, minimalistic-assert@^1.0.1:
   resolved "https://registry.yarnpkg.com/minimalistic-assert/-/minimalistic-assert-1.0.1.tgz#2e194de044626d4a10e7f7fbc00ce73e83e4d5c7"
   integrity sha512-UtJcAD4yEaGtjPezWuO9wC4nwUnVH/8/Im3yEHQP4b67cXlD/Qr9hdITCU1xDbSEXg2XKNaP8jsReV7vQd00/A==
 
-minimalistic-crypto-utils@^1.0.0, minimalistic-crypto-utils@^1.0.1:
+minimalistic-crypto-utils@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/minimalistic-crypto-utils/-/minimalistic-crypto-utils-1.0.1.tgz#f6c00c1c0b082246e5c4d99dfb8c7c083b2b582a"
   integrity sha1-9sAMHAsIIkblxNmd+4x8CDsrWCo=
@@ -3206,14 +3220,14 @@ nativescript-dev-sass@^1.6.0:
     nativescript-hook "^0.2.0"
     node-sass "^4.7.1"
 
-nativescript-dev-typescript@~0.7.0:
-  version "0.7.9"
-  resolved "https://registry.yarnpkg.com/nativescript-dev-typescript/-/nativescript-dev-typescript-0.7.9.tgz#99682eaff5a76c90e4e4173af3a94a095e9cc6cf"
-  integrity sha512-/c/n5qvQ54qu36rSA2uyOLHmKGhcBG1UroZ8d7bjYEpNRZMG0kRgl9HBNgjA9ScaLAXakDfx8FCjxzGJ8IOqAA==
+nativescript-dev-typescript@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/nativescript-dev-typescript/-/nativescript-dev-typescript-0.10.0.tgz#992299da10116a92d8b30b60231b37d1df4e1327"
+  integrity sha512-8NqJVNg+HEkEEEZ7ZyPnHSUjg18ewB0atyFBcIHFPbim4QYsgP+DCz/QxrsqcBKs6uQRFctBM06mYXUjX9JcMA==
   dependencies:
     nativescript-hook "^0.2.0"
     semver "5.5.0"
-    typescript "~3.1.1"
+    typescript "~3.4.5"
 
 nativescript-dev-webpack@~0.18.0:
   version "0.18.5"
@@ -3270,6 +3284,18 @@ nativescript-theme-core@~1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/nativescript-theme-core/-/nativescript-theme-core-1.0.6.tgz#cea174696bc5b3bd2025412c9c2eb4a5ed2b7f2d"
   integrity sha512-p9v8w0xC/WJDJat/HwxJ/u7Xf50i3JiZR0zx0M7445Gi4HaBClFcjfVc+TLOZEARU4RKauBTopYlLN4xke6tYw==
+
+nativescript-ui-core@~3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/nativescript-ui-core/-/nativescript-ui-core-3.0.0.tgz#94692416e3f79950c3b1e7d87f8f82f4d620e740"
+  integrity sha512-gEaooNnuLiAHSPlh2zfEkdc4sq7Z/0UtubiQbLjW3KvG8iyF6/jFQNmNEIr/RvcoZ9jVtEVmbdnaeA2MfpJQ+w==
+
+nativescript-ui-sidedrawer@^7.0.2:
+  version "7.0.4"
+  resolved "https://registry.yarnpkg.com/nativescript-ui-sidedrawer/-/nativescript-ui-sidedrawer-7.0.4.tgz#f47e12f1463315fc7085be16352844cad4e84890"
+  integrity sha512-RZsXfjSvnxC78mnplWDVx/AMIhP1VGXx6vSzlE3dADQhollVCxEgcQtxsnmL0ochTrYHayp7BBfEmtIs7AWHUg==
+  dependencies:
+    nativescript-ui-core "~3.0.0"
 
 nativescript-worker-loader@~0.9.0:
   version "0.9.5"
@@ -4325,6 +4351,11 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
+rxjs-compat@^6.5.3:
+  version "6.6.6"
+  resolved "https://registry.yarnpkg.com/rxjs-compat/-/rxjs-compat-6.6.6.tgz#5fc76a1ff1e6a3f3c5c773826b2ae1deea51da80"
+  integrity sha512-P6JOpjCYUBdXLMktko0a6JHltGaktFJA2W3DWDIjc+I9x9IwRQprOrHQf/fIykY3wAaSbbZIt6GASGMVC1mGfQ==
+
 rxjs@6.3.3, rxjs@~6.3.0:
   version "6.3.3"
   resolved "https://registry.yarnpkg.com/rxjs/-/rxjs-6.3.3.tgz#3c6a7fa420e844a81390fb1158a9ec614f4bad55"
@@ -5051,7 +5082,7 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@3.1.6, typescript@~3.1.1:
+typescript@3.1.6:
   version "3.1.6"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.1.6.tgz#b6543a83cfc8c2befb3f4c8fba6896f5b0c9be68"
   integrity sha512-tDMYfVtvpb96msS1lDX9MEdHrW4yOuZ4Kdc4Him9oU796XldPYF/t2+uKoX0BBa0hXXwDlqYQbXY5Rzjzc5hBA==
@@ -5060,6 +5091,11 @@ typescript@^3.2.1:
   version "3.6.2"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.6.2.tgz#105b0f1934119dde543ac8eb71af3a91009efe54"
   integrity sha512-lmQ4L+J6mnu3xweP8+rOrUwzmN+MRAj7TgtJtDaXE5PMyX2kCrklhg3rvOsOIfNeAWMQWO2F1GPc1kMD2vLAfw==
+
+typescript@~3.4.5:
+  version "3.4.5"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.4.5.tgz#2d2618d10bb566572b8d7aad5180d84257d70a99"
+  integrity sha512-YycBxUb49UUhdNMU5aJ7z5Ej2XGmaIBL0x34vZ82fn3hGvD+bgrMrVDpatgz2f7YxUMJxMkbWxJZeAvDxVe7Vw==
 
 uglify-es@^3.3.4:
   version "3.3.9"
